@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <style>
+      img {
+        transition: opacity 0.5s ease-in-out; /* Transición suave de opacidad */
+      }
+    </style>
+    <title>Nana Wine</title>
+  </head>
+  <body>
+    <header>
+      <nav></nav>
+    </header>
+    <main>
+      <div class="Centro">
+        <img
+          id="imagen"
+          src="/img/WhatsApp Image 2024-05-31 at 21.04.20.jpeg"
+          alt=""
+        />
+        <script>
+          // Función para hacer parpadear la imagen
+          function parpadear() {
+            var imagen = document.getElementById("imagen");
+            if (imagen.style.opacity === "0") {
+              imagen.style.opacity = "1"; // Si la opacidad es 0, establecerla en 1
+            } else {
+              imagen.style.opacity = "0"; // Si la opacidad es 1, establecerla en 0
+            }
+          }
+
+          // Llamamos a la función cada cierto intervalo para crear el efecto de parpadeo
+          setInterval(parpadear, 3000); // Cambia el valor para ajustar la velocidad del parpadeo
+        </script>
+        <br />
+        <a href="/NanaWine.html"><button>ingresar</button></a>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
